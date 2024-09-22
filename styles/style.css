@@ -28,6 +28,7 @@
   column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   margin-block-end: var(--sections-gap);
+  height: 100vh;
 }
 
 .header::before {
@@ -423,7 +424,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
     --accent-color: #FF8DCB;
     --normal-text-color: #353430;
     --special-text-color: var(--normal-text-color);
