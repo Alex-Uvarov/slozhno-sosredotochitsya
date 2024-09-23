@@ -1,1 +1,1 @@
-Проект "Сложно сосредоточиться"
+https://github.com/Alex-Uvarov/slozhno-sosredotochitsya
