@@ -10,4 +10,5 @@
   --background-image: url(../images/cover-image-dark.png);
   --font-family: 'IBM Plex mono', 'Arial', 'Helvetica', sans-serif;
   --from-ten-to-twenty-px-space: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  --blocks-gap: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }

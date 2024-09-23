@@ -8,11 +8,10 @@
   --background-image: url(../images/cover-image-dark.png);
   --font-family: 'IBM Plex mono', 'Arial', 'Helvetica', sans-serif;
   --from-ten-to-twenty-px-space: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  --sections-gap: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
+  --blocks-gap: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .page {
-  padding-block-start: var(--from-ten-to-twenty-px-space);
   background-image: var(--background-image);
   background-position: center;
   background-repeat: no-repeat;
@@ -24,11 +23,12 @@
 }
 
 .header {
+  padding-block-start: var(--from-ten-to-twenty-px-space);
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  margin-block-end: var(--sections-gap);
   height: 100vh;
+  margin-block-end: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .header::before {
@@ -150,7 +150,7 @@
   flex-direction: column;
   gap: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
   padding-inline: var(--from-ten-to-twenty-px-space);
-  margin-block-end: var(--sections-gap);
+  margin-block-end: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .section {
@@ -177,6 +177,7 @@
 
 .article-text {
   color: var(--normal-text-color);
+  line-height: 23.4px;
 }
 
 .text-link {
@@ -306,8 +307,7 @@
   }
 
   .header::after {
-    grid-row-start: 4;
-    margin-inline: 0;
+    grid-row-start: 5;
   }
 
   .header__theme-menu {
@@ -323,16 +323,16 @@
   .main-title {
     grid-column: span 2;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-block-end: clamp(3.4375rem, -2.9437rem + 27.2265vw, 10.125rem);
+    margin-block-end: clamp(3.4375rem, -2.7648rem + 26.4631vw, 9.9375rem);
   }
 
   .header-text {
     grid-column-start: 2;
-    margin-block-end: clamp(1.9375rem, -7.1274rem + 38.6768vw, 11.4375rem);
+    margin-block-end: clamp(1.9375rem, -4.4437rem + 27.2265vw, 8.625rem);
   }
 
   .section {
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: minmax(236px, 0.5fr) 1fr;
   }
 
   .section-why-article {
@@ -381,6 +381,7 @@
   }
 
   .header::after {
+    margin-inline: 0;
     grid-row-start: 5;
   }
 
@@ -411,6 +412,10 @@
   .section {
     display: flex;
     flex-direction: column;
+  }
+
+  .section-pictures {
+    gap: 10px;
   }
 
   .images {
