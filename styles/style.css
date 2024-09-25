@@ -1,13 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  padding-inline: var(--from-ten-to-twenty-px-space);
   background: fixed var(--background-image) var(--special-text-color) no-repeat center / cover;
   font-family: var(--font-family, monospace);
   font-size: 18px;
 }
 
 .header {
+  padding-inline: var(--from-ten-to-twenty-px-space);
   padding-block: var(--from-ten-to-twenty-px-space);
   display: grid;
   column-gap: clamp(0rem, -3.75rem + 7.8125vw, 1.25rem);
@@ -131,6 +131,7 @@
 .main-content {
   display: flex;
   flex-direction: column;
+  padding-inline: var(--from-ten-to-twenty-px-space);
   gap: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
   margin-block-end: var(--blocks-gap);
 }
@@ -243,6 +244,7 @@
 }
 
 .footer {
+  padding-inline: var(--from-ten-to-twenty-px-space);
   padding-block: var(--from-ten-to-twenty-px-space);
   display: grid;
   height: max(100vh, 668px);
