@@ -4,21 +4,17 @@
   переключая тему
 */
 
-:root.theme_dark {
+
+.page.theme_dark {
   --accent-color: #FF0070;
   --normal-text-color: #F1B2CE;
   --special-text-color: #000028;
   --main-title-color: #DB00FF;
+  --hover-color: rgb(255 0 112 / 0.4);
+  --background-color: var(--special-text-color);
+  --decorative-elements-color: var(--accent-color);
+  --element-showing: 1;
+  --menu-color: var(--accent-color);
+  --section-title-color: var(--accent-color);
   --background-image: url(../images/cover-image-dark.png);
-  --font-family: 'IBM Plex mono', 'Arial', 'Helvetica', sans-serif;
-  --from-ten-to-twenty-px-space: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  --sections-gap: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
-}
-
-.page.theme_dark {
-
-  .style-text {
-    display: flex;
-  }
-  
 }

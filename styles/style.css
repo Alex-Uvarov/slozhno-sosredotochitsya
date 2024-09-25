@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background: fixed var(--background-image) var(--special-text-color) no-repeat center / cover;
+  background: fixed var(--background-image) var(--background-color) no-repeat center / cover;
   font-family: var(--font-family, monospace);
   font-size: 18px;
 }
@@ -24,8 +24,8 @@
   content: '';
   width: 25px;
   height:25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decorative-elements-color);
+  border-right: 1px solid var(--decorative-elements-color);
 }
 
 .header::after {
@@ -35,8 +35,8 @@
   content: '';
   width: 25px;
   height:25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--decorative-elements-color);
+  border-bottom: 1px solid var(--decorative-elements-color);
 }
 
 .header__theme-menu {
@@ -53,7 +53,7 @@
   width: 70px;
   height: 26px;
   box-sizing: border-box;
-  color: var(--accent-color);
+  color: var(--menu-color);
   line-height: 18px;
   padding-inline: 13px;
   background-color: transparent;
@@ -62,18 +62,18 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-color);
   pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255 0 112 / 0.4);
+  border: 1px solid var(--hover-color);
   transition: 0.25s;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--menu-color);
 }
 
 .header-title {
@@ -115,6 +115,8 @@
   align-items: center;
   line-height: 25px;
   margin-inline-end: 9px;
+  color: var(--decorative-elements-color);
+  opacity: var(--element-showing);
 }
 
 .style-text::after {
@@ -125,7 +127,7 @@
   height: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--decorative-elements-color);
 }
 
 .main-content {
@@ -143,7 +145,7 @@
 }
 
 .section-title {
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-size: 18px;
   line-height: 23.4px;
 }
@@ -261,9 +263,9 @@
   content: '';
   width: 25px;
   height:25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
+  border-top: 1px solid var(--decorative-elements-color);
+  border-right: 1px solid var(--decorative-elements-color);
+}  
 
 .footer::after {
   position: absolute;
@@ -272,8 +274,8 @@
   content: '';
   width: 25px;
   height:25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--decorative-elements-color);
+  border-bottom: 1px solid var(--decorative-elements-color);
 }
 
 @media (width <= 768px) {
