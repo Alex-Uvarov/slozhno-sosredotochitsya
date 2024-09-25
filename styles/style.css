@@ -341,7 +341,7 @@
 
 }
 
-@media (width <= 375px) {
+@media (width <= 491px) {
 
   .header-text {
     grid-column: span 2;
