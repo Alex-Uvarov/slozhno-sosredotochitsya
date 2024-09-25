@@ -65,12 +65,13 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  
     --accent-color: #FF8DCB;
     --normal-text-color: #353430;
     --special-text-color: var(--normal-text-color);
     --main-title-color: #FFC2E6;
     --background-image: url(../images/cover-image-light);
+    
 
   .page {
     background-color: #FFF1F7;
