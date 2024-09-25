@@ -4,7 +4,7 @@
   переключая тему
 */
 
-.page.theme_dark {
+:root.theme_dark {
   --accent-color: #FF0070;
   --normal-text-color: #F1B2CE;
   --special-text-color: #000028;
@@ -13,4 +13,12 @@
   --font-family: 'IBM Plex mono', 'Arial', 'Helvetica', sans-serif;
   --from-ten-to-twenty-px-space: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   --sections-gap: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
+}
+
+.page.theme_dark {
+
+  .style-text {
+    display: flex;
+  }
+  
 }
