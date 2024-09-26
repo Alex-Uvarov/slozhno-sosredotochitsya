@@ -11,9 +11,9 @@
   padding-block: var(--from-ten-to-twenty-px-space);
   display: grid;
   column-gap: clamp(0rem, -3.75rem + 7.8125vw, 1.25rem);
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr min-content 1fr;
-  height: max(100vh, 668px);
+  height: 100vh;
+  min-height: 668px;
   margin-block-end: var(--blocks-gap);
 }
 
@@ -21,6 +21,7 @@
   position: absolute;
   box-sizing: border-box;
   justify-self: end;
+  -webkit-box-align: end;
   content: '';
   width: 25px;
   height:25px;
@@ -199,6 +200,12 @@
   font-weight: normal;
 }
 
+.section-pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .section-pictures-title {
   grid-column: span 3;
   color: var(--special-text-color);
@@ -249,7 +256,8 @@
   padding-inline: var(--from-ten-to-twenty-px-space);
   padding-block: var(--from-ten-to-twenty-px-space);
   display: grid;
-  height: max(100vh, 668px);
+  height: 100vh;
+  min-height: 668px;
 }
 
 .footer-title {
